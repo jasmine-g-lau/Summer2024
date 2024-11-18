@@ -1,0 +1,92 @@
+body{
+    background-image: url("background-sky.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+   
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    
+}
+.title{
+    font-family: "Papyrus";
+}
+
+/* Menu */
+.menu{
+    position: sticky;
+    top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+
+    width: 150px;
+    height: 150px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    margin: 25px;
+    font-family: "Press Start 2P";
+    color: lightgray;
+    font-size: 15px;
+    text-align: center; 
+    line-height: 1;
+}
+.menu a{
+    color: lightyellow;
+    text-decoration: none;
+}
+.menu a:hover{
+    animation: 2s linear infinite running myColorChange;
+}
+
+@keyframes myColorChange{
+    0%{color: pink;}
+    20%{color: lightsalmon;}
+    40%{color: lightyellow;}
+    60%{color: lightgreen;}
+    80%{color: lightblue;}
+    100%{color: plum;}
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    /* display: none; Hide columns by default */
+}
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    padding: 10px;
+}
+.content:hover{
+    background-color: pink;
+}
+.show {
+    display: block;
+}
+.btn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    color: powderblue;
+}
+.btn.active {
+    color: Red;
+}
